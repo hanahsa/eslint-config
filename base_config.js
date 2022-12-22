@@ -1,11 +1,11 @@
-import importPlugin from 'eslint-plugin-import'
-import jsxA11y from 'eslint-plugin-jsx-a11y'
-import prettier from 'eslint-plugin-prettier'
-import react from 'eslint-plugin-react'
-import typescript from '@typescript-eslint/eslint-plugin'
-import reactHooks from 'eslint-plugin-react-hooks'
+const importPlugin = require('eslint-plugin-import')
+const jsxA11y = require('eslint-plugin-jsx-a11y')
+const prettier = require('eslint-plugin-prettier')
+const react = require('eslint-plugin-react')
+const typescript = require('@typescript-eslint/eslint-plugin')
+const reactHooks = require('eslint-plugin-react-hooks')
 
-export default {
+module.exports = {
     languageOptions: {
         parser: '@typescript-eslint/parser',
     },
