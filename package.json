@@ -1,8 +1,9 @@
 {
   "name": "@padorang/eslint-config",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "peerDependencies": {
     "eslint": ">= 8.21",
     "typescript": "^4.8.3"
