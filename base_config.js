@@ -1,14 +1,21 @@
-module.exports = {
+import importPlugin from 'eslint-plugin-import'
+import jsxA11y from 'eslint-plugin-jsx-a11y'
+import prettier from 'eslint-plugin-prettier'
+import react from 'eslint-plugin-react'
+import typescript from '@typescript-eslint/eslint-plugin'
+import reactHooks from 'eslint-plugin-react-hooks'
+
+export default {
     languageOptions: {
         parser: '@typescript-eslint/parser',
     },
     plugins: {
-      typescript: '@typescript-eslint',
-      import: 'import',
-      react: 'react',
-      reactHooks: 'react-hooks',
-      prettier: 'prettier',
-      jsxA11y: "jsx-a11y",
+      typescript,
+      import: importPlugin,
+      react,
+      reactHooks,
+      prettier,
+      jsxA11y,
     },
     rules: {
         "prettier/prettier": [
