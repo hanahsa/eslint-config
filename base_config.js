@@ -4,10 +4,11 @@ const prettier = require('eslint-plugin-prettier')
 const react = require('eslint-plugin-react')
 const typescript = require('@typescript-eslint/eslint-plugin')
 const reactHooks = require('eslint-plugin-react-hooks')
+const typescriptParser = require('@typescript-eslint/parser')
 
 module.exports = {
     languageOptions: {
-        parser: '@typescript-eslint/parser',
+        parser: typescriptParser,
     },
     plugins: {
       typescript,
