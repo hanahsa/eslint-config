@@ -1,13 +1,13 @@
 {
   "name": "@padorang/eslint-config",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 8.21",
     "typescript": "^4.8.3"
   },
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
     "eslint-config-next": "^12.3.0",
