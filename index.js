@@ -1,3 +1,3 @@
-const base_config = require("./base_config");
+import baseConfig from "./base_config";
 
-module.exports = base_config; 
+export default baseConfig;
