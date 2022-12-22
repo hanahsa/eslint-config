@@ -1,5 +1,3 @@
-require("@rushstack/eslint-patch/modern-module-resolution");
-
 module.exports = {
     root: true,
     parser: '@typescript-eslint/parser',
@@ -60,6 +58,8 @@ module.exports = {
         "jsx-a11y/role-supports-aria-props": "error",
         "jsx-a11y/scope": "error",
         "jsx-a11y/tabindex-no-positive": "error",
+        // typescript
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-unnecessary-condition": "error",
     },
-    extends: [],
 };
