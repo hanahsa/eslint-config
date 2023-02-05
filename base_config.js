@@ -5,6 +5,7 @@ const react = require('eslint-plugin-react')
 const typescript = require('@typescript-eslint/eslint-plugin')
 const reactHooks = require('eslint-plugin-react-hooks')
 const typescriptParser = require('@typescript-eslint/parser')
+const unusedImports = require('eslint-plugin-unused-imports')
 
 module.exports = {
     languageOptions: {
@@ -17,12 +18,13 @@ module.exports = {
       reactHooks,
       prettier,
       jsxA11y,
+      unusedImports,
     },
     rules: {
         "prettier/prettier": [
             "error",
             {
-                "trailingComma": "es5",
+                "trailingComma": "all",
                 "useTabs": true,
                 "semi": true,
                 "singleQuote": false,
@@ -70,5 +72,11 @@ module.exports = {
         // typescript
         "typescript/no-explicit-any": "error",
         "typescript/no-unnecessary-condition": "error",
+        // import
+        "import/first": "error",
+        "import/no-duplicates": "error",
+        "import/newline-after-import": "error",
+        // unused imports
+        "unusedImports/no-unused-imports": "error"
     },
 };

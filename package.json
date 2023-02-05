@@ -1,6 +1,6 @@
 {
   "name": "@padorang/eslint-config",
-  "version": "0.0.12",
+  "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
@@ -16,6 +16,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
     "prettier": "^2.8.1"
   }
 }
