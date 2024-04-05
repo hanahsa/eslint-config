@@ -72,6 +72,7 @@ module.exports = {
         // typescript
         "typescript/no-explicit-any": "error",
         "typescript/no-unnecessary-condition": "error",
+        "typescript/switch-exhaustiveness-check": "error",
         // import
         "import/first": "error",
         "import/no-duplicates": "error",
