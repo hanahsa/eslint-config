@@ -6,6 +6,7 @@ const typescript = require('@typescript-eslint/eslint-plugin')
 const reactHooks = require('eslint-plugin-react-hooks')
 const typescriptParser = require('@typescript-eslint/parser')
 const unusedImports = require('eslint-plugin-unused-imports')
+const { fixupPluginRules } = require("@eslint/compat")
 
 module.exports = {
     languageOptions: {
@@ -13,7 +14,7 @@ module.exports = {
     },
     plugins: {
       typescript,
-      import: importPlugin,
+      import: fixupPluginRules(importPlugin),
       react,
       reactHooks,
       prettier,
